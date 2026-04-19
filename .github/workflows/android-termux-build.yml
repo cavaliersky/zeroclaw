@@ -63,9 +63,7 @@ jobs:
       - name: Build release (stable minimal)
         run: |
           cargo build --release \
-            --target armv7-linux-androideabi \
-            --no-default-features \
-            --features channel-lark
+            --target armv7-linux-androideabi 
 
       # 9. strip（减小体积）
       - name: Strip binary
